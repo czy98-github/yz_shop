@@ -1,0 +1,66 @@
+# ===== 本地工具链（~2.1GB：JDK 17/21、MySQL 8.4、Maven）=====
+# 体积大且可重新下载，其中 mysql-8.4.11/bin/mysqld-debug 约 206MB，
+# 超过 GitHub 单文件 100MB 硬限制，必须排除。
+/.toolchain/
+
+# ===== 前端依赖 =====
+node_modules/
+.pnpm-store/
+
+# ===== 后端构建产物 =====
+target/
+*.jar
+*.war
+
+# ===== 上游仓库快照备份（扁平化后保留的上游 .git）=====
+# 原始来源：https://github.com/guchengwuyue/yshop-drink （MIT）
+.git.upstream-backup/
+
+# ===== WorkBuddy 本地工作记忆（仅本机）=====
+/.workbuddy/
+
+# ===== 文档生成流水线中间产物（可重新生成，正式交付物见 delivery/）=====
+/output/
+
+# ===== 操作系统与编辑器 =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== 日志 =====
+*.log
+
+# ===== 本机探针与安装残留 =====
+/.rbprobe/
+/.rn_src
+/.brew_install.log
+probe.lock.incomplete
+
+# ===== 脚本运行产生的备份与临时文件 =====
+*.bak.*
+*.bak
+_tmp_*
+e1yjwclq
+
+# ===== 环境探测生成的随机命名残留文件（4 字节探测产物）=====
+/_84ikme3
+/_y96gsdc
+/0z9lryul
+/2wqcpjrg
+/i6du03_3
+/ne9rkpro
+/o0iam2xn
+/p6_9pp15
+/pa1emvlv
+/rp10dm37
+/tb1zj28q
+/tmtqbsc2
+/uxmkegq2
+/viidz7i8
+/x0t6qklf
+/xacklzac
+/yi_pz0yi
+/zbgnzga6
